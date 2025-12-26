@@ -179,6 +179,10 @@ local groups = {
 
   -- Mini.pick
   MiniPickMatchRanges = { fg = c.constant },
+
+  -- Oil
+  OilCreate = { fg = c.add }
+
 }
 
 for group, hl in pairs(groups) do
