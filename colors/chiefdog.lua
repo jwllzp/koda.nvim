@@ -99,6 +99,7 @@ local groups = {
   Underlined   = { underline = true },
   Error        = { fg = c.error },
   Debug        = { fg = c.constant },
+  LspInlayHint = { fg = c.comment },
 
   -- Treesitter
   ["@function"]              = { link = "Function" },
