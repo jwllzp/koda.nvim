@@ -1,3 +1,4 @@
+-- lua/chiefdog/utils.lua
 local M = {}
 
 ---@param color string
