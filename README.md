@@ -1,7 +1,9 @@
 <div align="center"><h1>Koda</h1></div>
-<p align="center">Code's quiet companion. A minimalistic theme for Neovim, written in Lua.</p>
+<p align="center">Code's quiet companion.</p>
+<p align="center"> A minimalist theme for Neovim, written in Lua.</p>
 
-<img width="1487" height="916" alt="image" src="https://github.com/user-attachments/assets/5c118fcf-b30a-4606-8200-fdfaba4d3993" />
+<img width="1510" height="943" alt="koda-dark-bigger-2026-01-07" src="https://github.com/user-attachments/assets/8aba84e5-519d-4a2f-8632-7387e4da4cc2" />
+<img width="1510" height="943" alt="koda-light-bigger-2026-01-07" src="https://github.com/user-attachments/assets/bfa5d1e1-1afa-4645-a7d8-c4d6b519dcd0" />
 
 > [!NOTE]
 > Developed on a 14" XDR retina display, your mileage may vary depending on your screen and brightness.
@@ -38,30 +40,32 @@ You only need to call `setup` if you wish to override the following defaults:
 ```lua
 require("koda").setup({
     bold = true           -- Disable bold for functions and keywords
-    italic = false,      -- Enable italics for comments and strings
-    transparent = false,  -- Enable for transparent terminal backgrounds
+    italic = false,       -- Enable italics for comments and strings
+    transparent = false,  -- Enable for transparent backgrounds
 
     -- Override colors
     -- These will be merged into the active palette (Dark or Light)
     -- Example colors for dark background
     colors = {
-        transparent = "none",
+        none        = "none",
+        bg_solid    = "#101010",
         bg          = "#101010",
         fg          = "#b0b0b0",
         line        = "#272727",
-        match       = "#4d4d4d",
-        comment     = "#50585d",
-        number      = "#808080",
+        paren       = "#4d4d4d",
         keyword     = "#777777",
+        dim         = "#50585d",
+        comment     = "#50585d",
+        border      = "#ffffff",
+        emphasis    = "#ffffff",
         func        = "#ffffff",
         string      = "#ffffff",
-        constant    = "#d9ba73",
-        visual      = "#0058D0",
-        hint        = "#8ebeec",
-        error       = "#ff7676",
-        add         = "#86CD82",
-        change      = "#d9ba73",
-        delete      = "#ff7676",
+        const       = "#d9ba73",
+        highlight   = "#0058d0",
+        info        = "#8ebeec",
+        success     = "#86cd82",
+        warning     = "#d9ba73",
+        danger      = "#ff7676",
     }
 })
 ```
