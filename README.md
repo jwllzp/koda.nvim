@@ -33,7 +33,7 @@ vim.pack.add({
 vim.cmd("colorscheme koda")
 ```
 
-## Configuration
+## Configuration:
 
 You only need to call `setup` if you wish to override the following defaults:
 
