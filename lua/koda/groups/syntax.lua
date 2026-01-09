@@ -6,42 +6,52 @@ local M = {}
 function M.get(c, opts)
     -- stylua: ignore
     return {
-      Keyword           = { fg = c.keyword },
+      Comment           = { fg = c.comment, style = opts.styles.comments },
+
+      Constant          = { fg = c.const, style = opts.styles.constants },
+      String            = { fg = c.string, style = opts.styles.strings },
+      Character         = { link = "String" },
+      Number            = { fg = c.const, style = opts.styles.constants },
+      Boolean           = { fg = c.const, style = opts.styles.constants },
+      Float             = { fg = c.const, style = opts.styles.constants },
+      Identifier        = { link = "Normal" },
+      Function          = { fg = c.func, style = opts.styles.functions },
+
+      Keyword           = { fg = c.keyword, style = opts.styles.keywords },
+      Statement         = { link = "Keyword" },
       Conditional       = { link = "Keyword" },
       Repeat            = { link = "Keyword" },
       Label             = { link = "Keyword" },
-      Exception         = { link = "Keyword" },
-      Statement         = { link = "Keyword" },
       Operator          = { link = "Keyword" },
-      Delimiter         = { fg = c.emphasis },
-      Type              = { link = "Keyword" },
-      Structure         = { link = "Keyword" },
-      Identifier        = { fg = c.fg },
-      PreProc           = { link = "Keyword" },
+      Exception         = { link = "Keyword" },
+
+      PreProc           = { link = "Normal" },
       Include           = { link = "Keyword" },
       Define            = { link = "Keyword" },
+      Macro             = { link = "Constant" },
       PreCondit         = { link = "Keyword" },
+
+      Type              = { link = "Keyword" },
       StorageClass      = { link = "Keyword" },
+      Structure         = { link = "Keyword" },
       Typedef           = { link = "Keyword" },
-      Tag               = { link = "Keyword" },
-      Function          = { fg = c.func, bold = opts.bold },
-      Title             = { fg = c.emphasis, bold = true },
-      String            = { fg = c.string, italic = opts.italic },
-      Character         = { link = "String" },
-      Number            = { fg = c.const },
-      Boolean           = { fg = c.const },
-      Float             = { fg = c.const },
-      Constant          = { fg = c.const },
-      Macro             = { fg = c.const },
-      Comment           = { fg = c.comment, italic = opts.italic },
-      -- Todo              = { fg = c.fg, bg = c.bg , bold = true }, -- NOTE: it's better if fallbacks handle this
-      Special           = { fg = c.fg },
+
+      Special           = { link = "Normal" },
       SpecialChar       = { link = "Special" },
+      Tag               = { link = "Normal" },
+      Delimiter         = { fg = c.emphasis },
       SpecialComment    = { link = "Comment" },
-      Error             = { fg = c.danger },
       Debug             = { fg = c.const },
-      LspInlayHint      = { fg = c.dim },
+
       Underlined        = { underline = true },
+
+      Error             = { fg = c.danger },
+
+      -- Todo              = { fg = c.fg, bg = c.bg , bold = true }, -- let Neovims handle this
+
+      Added             = { fg = c.success },
+      Changed           = { fg = c.changed },
+      Removed           = { fg = c.danger },
     }
 end
 
