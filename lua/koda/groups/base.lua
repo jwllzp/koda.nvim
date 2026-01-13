@@ -48,7 +48,7 @@ function M.get(c, opts)
       Directory         = { fg = c.info },
       QuickFixLine      = { fg = c.const, underline = true },
       qfLineNr          = { fg = c.comment },
-      Title             = { fg = c.emphasis, bold = true },
+    TabLineSel        = { fg = c.emphasis, bg = c.line },
       DiffAdd           = { fg = c.success, bg = utils.blend(c.success, c.bg, 0.2) },
       DiffChange        = { fg = c.warning, bg = utils.blend(c.warning, c.bg, 0.2) },
       DiffDelete        = { fg = c.danger, bg = utils.blend(c.danger, c.bg, 0.2) },
