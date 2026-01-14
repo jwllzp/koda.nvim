@@ -3,10 +3,10 @@ local utils = require("koda.utils")
 
 local M = {}
 
---- Get base highlight groups
----@param c koda.Palette The color palette
+--- Get base highlight groups, see `:h highlight-groups`
+---@param c koda.Palette Color palette
 ---@param opts koda.Config User configuration
----return table<string, table> # highlight groups table
+---return table<string, table> # Groups table
 function M.get(c, opts)
   -- stylua: ignore
   return {

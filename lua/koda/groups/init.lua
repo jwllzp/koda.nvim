@@ -2,8 +2,8 @@
 local M = {}
 
 ---@param c table Color palette
----@param opts koda.Config User options
----@return table # A Table of highlight groups
+---@param opts koda.Config User configuration
+---@return table # Merged table of all highlight groups
 function M.setup(c, opts)
   local base = require("koda.groups.base").get(c, opts)
   local syntax = require("koda.groups.syntax").get(c, opts)

@@ -3,7 +3,7 @@ local M = {}
 
 ---@class koda.Config
 ---@field transparent? boolean Enable/disable background transparency
----@field styles? table<string, table> Granular bold/italic styling
+---@field styles? table<string, table> Enable/disable bold/italic styling
 ---@field colors? table<string, string> Override palette hex codes
 
 ---@type koda.Config

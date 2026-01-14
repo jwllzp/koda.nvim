@@ -5,8 +5,7 @@ local M = {}
 function M.setup(opts)
   require("koda.config").setup(opts)
 
-  -- Option to reload the colorscheme with "KodaFetch" usercmd.
-  -- Usefull while in dev and testing out colors
+  -- Reload the colorscheme with :KodaFetch
   vim.api.nvim_create_user_command("KodaFetch", function()
     require("koda.utils").reload()
   end, {})
