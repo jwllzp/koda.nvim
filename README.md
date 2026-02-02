@@ -17,7 +17,7 @@
 - **Lean**: skips highlights for plugins that aren't installed.
 - Supports stable and the latest [Neovim 0.12](https://neovim.io/roadmap/) features.
 
-<details>
+<details id="plugin-support">
   <summary>Supported plugins</summary>
 
 > Please open an issue if you notice any problems, or if a plugin you think should have explicit support is missing from the list.
