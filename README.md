@@ -33,6 +33,7 @@
 - [mini.icons](https://github.com/nvim-mini/mini.icons?tab=readme-ov-file)
 - [mini.jump2d](https://github.com/nvim-mini/mini.jump2d)
 - [modes.nvim](https://github.com/mvllow/modes.nvim)
+- [neo-tree.nvim](https://github.com/nvim-neo-tree/neo-tree.nvim)
 - [oil.nvim](https://github.com/stevearc/oil.nvim)
 - [rainbow-delimiters.nvim](https://github.com/HiPhish/rainbow-delimiters.nvim)
 - [render-markdown.nvim](https://github.com/MeanderingProgrammer/render-markdown.nvim)
