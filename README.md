@@ -37,10 +37,13 @@
 - [oil.nvim](https://github.com/stevearc/oil.nvim)
 - [rainbow-delimiters.nvim](https://github.com/HiPhish/rainbow-delimiters.nvim)
 - [render-markdown.nvim](https://github.com/MeanderingProgrammer/render-markdown.nvim)
+- [snacks.dashboard](https://github.com/folke/snacks.nvim/blob/main/docs/dashboard.md)
+- [snacks.input](https://github.com/folke/snacks.nvim/blob/main/docs/input.md)
+- [snacks.notifier](https://github.com/folke/snacks.nvim/blob/main/docs/notifier.md)
 - [snacks.picker](https://github.com/folke/snacks.nvim/blob/main/docs/picker.md)
 - [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
 - [treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
-- [trouble](https://github.com/folke/trouble.nvim)
+- [trouble.nvim](https://github.com/folke/trouble.nvim)
 
 </details>
 
