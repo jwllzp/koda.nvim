@@ -165,13 +165,13 @@ require("koda").setup({
 
 ## API
 
-Koda exposes a few utility functions to allow users to integrate the theme with other parts of your configuration.
+Koda exposes a few utility functions to allow users to integrate the theme with other parts of their configuration.
 
 ```lua
 local koda = require("koda")
 local colors = koda.get_palette() -- returns the active palette (dark or light) with any of your user overrides applied
 
-some_plugin.error= koda.blend(colors.danger, colors.bg, 0.3) -- blends two colors together. Useful for creating custom shades that match the theme
+some_plugin.error = koda.blend(colors.danger, colors.bg, 0.3) -- blends two colors together. Useful for creating custom shades that match the theme
 ```
 
 ## Language support
