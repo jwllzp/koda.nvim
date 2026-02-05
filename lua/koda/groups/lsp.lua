@@ -14,6 +14,7 @@ function M.get_hl(c)
     ["@lsp.type.comment"]               = {}, -- use treesitter styles
     ["@lsp.type.enum"]                  = { link = "Function" },
     ["@lsp.type.lifetime"]              = { fg   = c.const },
+    ["@lsp.type.interface"]             = { link = "Function" },
     ["@lsp.type.namespace"]             = { link = "Normal" },
     ["@lsp.type.struct"]                = { link = "Function" },
     ["@lsp.typemod.class.abstract"]     = { link = "Function" },
