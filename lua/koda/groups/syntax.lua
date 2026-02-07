@@ -24,7 +24,7 @@ function M.get_hl(c, opts)
     PreProc         = { link = "Normal" },
     Include         = { link = "Keyword" },
     Define          = { link = "Keyword" },
-    Macro           = { link = "Constant" },
+    Macro           = { fg = c.const },
     PreCondit       = { link = "Keyword" },
     Type            = { link = "Keyword" },
     StorageClass    = { link = "Keyword" },
