@@ -13,7 +13,7 @@ function M.get_hl(c, opts)
     ["@constant"]                      = { link = "Constant" },
     ["@constant.macro"]                = { link = "Constant" },
     ["@constant.builtin"]              = { link = "Constant" },
-    ["@module"]                        = { link = "Structure" },
+    ["@module"]                        = { link = "Identifier" },
     ["@module.builtin"]                = { link = "Special" },
     ["@label"]                         = { link = "Structure" },
     ["@string"]                        = { link = "String" },
@@ -29,9 +29,9 @@ function M.get_hl(c, opts)
     ["@boolean"]                       = { link = "Boolean" },
     ["@number"]                        = { link = "Number" },
     ["@number.float"]                  = { link = "Number" },
-    ["@type"]                          = { link = "Type" },
+    ["@type"]                          = { link = "Identifier" },
     ["@type.builtin"]                  = { link = "Type" },
-    ["@type.definition"]               = { link = "Type" },
+    ["@type.definition"]               = { link = "Identifier" },
     ["@attribute"]                     = { link = "Keyword" },
     ["@attribute.builtin"]             = { link = "Keyword" },
     ["@property"]                      = { link = "Identifier" },
@@ -97,15 +97,6 @@ function M.get_hl(c, opts)
     ["@tag.builtin"]                   = { link = "Normal" },
     ["@tag.delimiter"]                 = { link = "Keyword" },
     ["@tag.attribute"]                 = { link = "Keyword" },
-
-    -- rust
-    ["@character.rust"] = { fg=c.success },
-    ["@operator.rust"] = { fg=c.emphasis },
-
-    -- python
-    ["@constructor.python"] = { link = "Function"},
-    ["@module.python"]      = { fg   = c.fg },
-    ["@type.python"]        = { link = "Function" },
   }
 end
 
