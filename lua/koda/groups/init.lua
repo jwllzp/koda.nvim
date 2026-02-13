@@ -58,7 +58,7 @@ function M.setup(colors, opts)
           groups[group] = true
         end
       end
-      -- Special case: detect individual mini.* modules (mini.pick, mini.icons, etc.)
+      -- Special case: detect standalone mini.* modules (mini.pick, mini.icons, etc.)
       if not groups.mini then
         for plugin_name, _ in pairs(lazy_plugins) do
           if plugin_name:match("^mini%.") then
@@ -75,7 +75,7 @@ function M.setup(colors, opts)
           if plugin.active and M.plugins[plugin.spec.name] then
             groups[M.plugins[plugin.spec.name]] = true
           end
-          -- Special case: detect individual mini.* modules
+          -- Check standalone mini modules
           if not groups.mini and plugin.active and plugin.spec.name:match("^mini%.") then
             groups.mini = true
           end
@@ -86,6 +86,10 @@ function M.setup(colors, opts)
       for _, plugin in ipairs(_G.MiniDeps.get_session()) do
         if M.plugins[plugin.name] then
           groups[M.plugins[plugin.name]] = true
+        end
+        -- Check standalone mini modules
+        if not groups.mini and plugin.name:match("^mini%.") then
+          groups.mini = true
         end
       end
     end
